@@ -20,7 +20,7 @@ BLOG_AUTHOR = "MaaS Tech Japan" # (translatable)
 BLOG_TITLE = "Tech::MaaS Tech Japan" # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
-SITE_URL = "https://tech.,maas.co.jp/"
+SITE_URL = "https://tech.maas.co.jp/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://www.tesshy.com/"
