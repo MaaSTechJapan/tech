@@ -1,0 +1,9 @@
+#container {
+  margin: 1em auto;
+  max-width: 1024px;
+}
+
+div.prompt {
+  min-width: 1ex;
+  background-color: #FFFFFF;
+}

@@ -1,0 +1,4 @@
+Sitemap: https://tech.,maas.co.jp/sitemapindex.xml
+
+User-Agent: *
+Host: tech.,maas.co.jp
