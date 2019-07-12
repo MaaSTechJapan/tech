@@ -7,38 +7,46 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://tech.maas.co.jp/</loc>
-  <lastmod>2019-06-01T02:53:00Z</lastmod>
+  <lastmod>2019-07-12T02:07:00Z</lastmod>
  </url>
  <url>
   <loc>https://tech.maas.co.jp/2019/</loc>
-  <lastmod>2019-06-01T02:52:00Z</lastmod>
+  <lastmod>2019-07-12T02:07:00Z</lastmod>
  </url>
  <url>
   <loc>https://tech.maas.co.jp/archive.html</loc>
-  <lastmod>2019-06-17T03:01:00Z</lastmod>
+  <lastmod>2019-07-12T02:07:00Z</lastmod>
  </url>
  <url>
   <loc>https://tech.maas.co.jp/categories/</loc>
-  <lastmod>2019-06-01T02:52:00Z</lastmod>
+  <lastmod>2019-07-12T02:07:00Z</lastmod>
  </url>
  <url>
   <loc>https://tech.maas.co.jp/galleries/</loc>
-  <lastmod>2019-06-01T02:51:00Z</lastmod>
+  <lastmod>2019-07-12T02:07:00Z</lastmod>
  </url>
  <url>
   <loc>https://tech.maas.co.jp/listings/</loc>
-  <lastmod>2019-06-01T02:51:00Z</lastmod>
+  <lastmod>2019-07-12T02:07:00Z</lastmod>
  </url>
  <url>
   <loc>https://tech.maas.co.jp/pages/profile/</loc>
-  <lastmod>2019-06-01T02:52:00Z</lastmod>
+  <lastmod>2019-07-12T02:07:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://tech.maas.co.jp/posts/add-file-azure-data-lake-storage-gen2/</loc>
+  <lastmod>2019-07-12T02:07:00Z</lastmod>
  </url>
  <url>
   <loc>https://tech.maas.co.jp/posts/decode-2019-day1/</loc>
-  <lastmod>2019-06-01T02:53:00Z</lastmod>
+  <lastmod>2019-07-12T02:07:00Z</lastmod>
  </url>
  <url>
   <loc>https://tech.maas.co.jp/posts/decode-2019-day2/</loc>
-  <lastmod>2019-06-17T03:01:00Z</lastmod>
+  <lastmod>2019-07-12T02:07:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://tech.maas.co.jp/posts/macosdetex/</loc>
+  <lastmod>2019-07-12T02:07:00Z</lastmod>
  </url>
 </urlset>
