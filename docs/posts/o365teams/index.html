@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html prefix="        og: http://ogp.me/ns# article: http://ogp.me/ns/article#     " vocab="http://ogp.me/ns" lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>teamsで作ったOffice365グループをOutlookに表示する方法 | Tech::MaaS Tech Japan</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/custom.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#E4004F">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="ja" href="../../rss.xml">
+<link rel="canonical" href="https://tech.maas.co.jp/posts/o365teams/">
+<!--[if lt IE 9]><script src="../../assets/js/html5shiv-printshiv.min.js"></script><![endif]--><meta name="author" content="MaaS Tech Japan">
+<link rel="prev" href="../decode-2019-day2/" title="de:code 2019 Day.2" type="text/html">
+<link rel="next" href="../macosdetex/" title="macOSでTeX" type="text/html">
+<meta property="og:site_name" content="Tech::MaaS Tech Japan">
+<meta property="og:title" content="teamsで作ったOffice365グループをOutlookに表示する方法">
+<meta property="og:url" content="https://tech.maas.co.jp/posts/o365teams/">
+<meta property="og:description" content="弊社、Microsoft teamsが主要コミュニケーションツールです。
+んでこのteams、チームというものを作ると、Office365グループが裏で自動生成されます。このOffice365グループ、自身にメールアドレス持ってたりカレンダー持ってたりで複数人で情報共有する場合、Outlookで閲覧できて便利なのですが、何故かteamsから作った場合Outlookで表示されない=それらの機能が使え">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2019-06-18T11:19:42+09:00">
+</head>
+<body>
+    <a href="#content" class="sr-only sr-only-focusable">本文を読み飛ばす</a>
+    <div id="container">
+         
+    <header id="header"><h1 id="brand"><a href="https://tech.maas.co.jp/" title="Tech::MaaS Tech Japan" rel="home">
+
+        <span id="blog-title">Tech::MaaS Tech Japan</span>
+    </a></h1>
+
+        
+
+        
+    <nav id="menu"><ul>
+<li><a href="../../pages/profile">プロフィール</a></li>
+                <li><a href="../../archive.html">記事一覧</a></li>
+                <li><a href="../../categories/">タグ</a></li>
+                <li><a href="../../rss.xml">RSS</a></li>
+
+    
+
+    
+    
+    </ul></nav></header><main id="content"><article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">teamsで作ったOffice365グループをOutlookに表示する方法</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                    MaaS Tech Japan
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2019-06-18T11:19:42+09:00" itemprop="datePublished" title="2019-06-18 11:19">2019-06-18 11:19</time></a>
+            </p>
+            
+        <p class="sourceline"><a href="index.ipynb" class="sourcelink">ソース</a></p>
+
+        </div>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>弊社、Microsoft teamsが主要コミュニケーションツールです。</p>
+<p>んでこのteams、チームというものを作ると、Office365グループが裏で自動生成されます。このOffice365グループ、自身にメールアドレス持ってたりカレンダー持ってたりで複数人で情報共有する場合、Outlookで閲覧できて便利なのですが、何故かteamsから作った場合Outlookで表示されない=それらの機能が使えない・・・</p>
+<p>実は三、四ヶ月前にも同じ問題にぶち当たったのですが原因わからず放置してたのですが、いよいよきちんと整理整頓しないとまずいお気持ちになってきたので調べたところ、ありました。</p>
+<p>どうやら過去のあるタイミングでtemsでチームを作った場合に生成されるOffice365グループはデフォルトで不可視になった模様。そんでもってどうやら表示させる方法はあるようなのだが・・・</p>
+<blockquote>
+<p>顧客のフィードバックに基づき、Microsoft Teams でチームを作成した結果として生成された新しい Office 365 グループは、既定では Outlook に表示されなくなります。 Outlook でこれらのグループを表示する既存の動作を継続する場合は、Exchange Online PowerShell コマンドレットが提供されます。これにより、Outlook のエクスペリエンスにグループを有効にすることができます。 Outlook を使用して作成されたグループで、後で Teams を有効にした場合は、Outlook と Teams の両方に表示されたままになります。 この更新プログラムは、数か月以内に Outlook と Teams の間で段階的にロールアウトされます。</p>
+</blockquote>
+<p><a href="https://docs.microsoft.com/ja-jp/microsoftteams/office-365-groups">https://docs.microsoft.com/ja-jp/microsoftteams/office-365-groups</a></p>
+<p>この更新プログラムって、他に全く言及されてなくていつなのかも全くわからず・・・ナンジャコリャと思って大元のドキュメント調べたら、ありました、フラグの設定。</p>
+
+<pre><code>-HiddenFromExchangeClientsEnabled
+    The HiddenFromExchangeClientsEnabled switch specifies whether the Office 365 Group is hidden from Outlook clients connected to Office 365.</code></pre>
+<p><a href="https://docs.microsoft.com/en-us/powershell/module/exchange/users-and-groups/set-unifiedgroup?view=exchange-ps">https://docs.microsoft.com/en-us/powershell/module/exchange/users-and-groups/set-unifiedgroup?view=exchange-ps</a></p>
+<p>というわけで、以下設定用PowerShell Script。</p>
+<div class="highlight"><pre><span></span><span class="nv">$MyUserName</span> <span class="p">=</span> <span class="s2">"FOO@BAR.onmicrosoft.com"</span><span class="p">;</span>
+<span class="nv">$MyPassword</span> <span class="p">=</span> <span class="nb">ConvertTo-SecureString</span> <span class="s1">'PASSWORD'</span> <span class="n">-asplaintext</span> <span class="n">-force</span><span class="p">;</span>
+<span class="nv">$UserCredential</span> <span class="p">=</span> <span class="no">[System.Management.Automation.PSCredential]</span><span class="p">::</span><span class="n">new</span><span class="p">(</span><span class="nv">$MyUserName</span><span class="p">,</span> <span class="nv">$MyPassword</span><span class="p">)</span>
+<span class="nv">$Session</span> <span class="p">=</span> <span class="nb">New-PSSession</span> <span class="n">-ConfigurationName</span> <span class="n">Microsoft</span><span class="p">.</span><span class="n">Exchange</span> <span class="n">-ConnectionUri</span> <span class="n">https</span><span class="err">:</span><span class="p">//</span><span class="n">outlook</span><span class="p">.</span><span class="n">office365</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">powershell-liveid</span><span class="p">/</span> <span class="n">-Credential</span> <span class="nv">$UserCredential</span> <span class="n">-Authentication</span> <span class="n">Basic</span> <span class="n">-AllowRedirection</span>
+<span class="nb">Import-PSSession</span> <span class="nv">$Session</span>
+
+<span class="nb">Set-UnifiedGroup</span> <span class="n">-Identity</span> <span class="s2">"GUID_OR_GROUP-EMAIL-ADDRESS"</span> <span class="n">-HiddenFromExchangeClientsEnabled</span><span class="err">:</span><span class="nv">$false</span>
+</pre></div>
+<p>これでOutlookに表示される様になりました！めでたしめでたし。</p>
+
+</div>
+</div>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+<li class="previous">
+                <a href="../decode-2019-day2/" rel="prev" title="de:code 2019 Day.2">一つ前の文書</a>
+            </li>
+            <li class="next">
+                <a href="../macosdetex/" rel="next" title="macOSでTeX">次の文書</a>
+            </li>
+        </ul></nav></aside><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" integrity="sha256-SDRP1VVYu+tgAGKhddBSl5+ezofHKZeI+OzxakbIe/Y=" crossorigin="anonymous"></script><script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$latex ','$'], ['\\(','\\)']]}});
+        </script></article></main><footer id="footer"><p>Contents © 2019         <a href="mailto:tech@maas.co.jp">MaaS Tech Japan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+            
+        </footer>
+</div>
+    
+            <script src="../../assets/js/all-nocdn.js"></script><!-- Social buttons --><div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+<a class="addthis_button_more">Share</a>
+<ul>
+<li>
+<a class="addthis_button_facebook"></a>
+</li>
+<li>
+<a class="addthis_button_google_plusone_share"></a>
+</li>
+<li>
+<a class="addthis_button_linkedin"></a>
+</li>
+<li>
+<a class="addthis_button_twitter"></a>
+</li>
+</ul>
+</div>
+<script src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
+    </script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-128785619-2"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-128785619-2');
+</script>
+</body>
+</html>
